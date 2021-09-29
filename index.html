@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="https://i.ibb.co/XbW1ypK/logo.png"  class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">New Items</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's<span> Starbucks</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quam vero nemo totam dolore explicabo maiores ducimus minima itaque ipsam?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="https://i.ibb.co/9TBZqgX/img1.png" class="starbucks" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="https://i.ibb.co/K6JmBFs/thumb1.png"  onclick="imgSlider('https://i.ibb.co/9TBZqgX/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="https://i.ibb.co/sy10PXS/thumb2.png"  onclick="imgSlider('https://i.ibb.co/wdYQY7F/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="https://i.ibb.co/xD6md1H/thumb3.png"  onclick="imgSlider('https://i.ibb.co/3mDp4RD/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/zF17PG8/book.png" alt="bookface"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Tr1drS4/gram.png" alt="gram"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/M72mbMz/tweet.png" alt="tweet"></a></li>
+        </ul>
+    </section>
+
+    <script type='text/javascript'>
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
