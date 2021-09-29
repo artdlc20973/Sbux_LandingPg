@@ -47,7 +47,6 @@ header ul li {
 header ul li a {
   display: inline-block;
   color: #333;
-  /* font-family: "Montserrat"; */
   font-weight: 500;
   margin-left: 40px;
   text-decoration: none;
@@ -94,6 +93,10 @@ header ul li a {
   font-weight: 500;
   letter-spacing: 1px;
   text-decoration: none;
+}
+
+span {
+  -webkit-text-stroke: 2px #fff;
 }
 
 .content .imgBox {
@@ -162,4 +165,36 @@ header ul li a {
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+
+@media only screen and (max-width: 600px) {
+  .content .textBox h2 span {
+    font-size: 1em;
+    font-weight: 300;
+  }
+  .content .imgBox img {
+    max-width: 200px;
+  }
+  header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 500;
+    margin-left: 25px;
+    font-size: small;
+    text-decoration: none;
+  }
+  .social {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content .textBox p {
+    color: #333;
+    font-size: small;
+  }
 }
